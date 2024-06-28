@@ -29,7 +29,7 @@ function Show() {
       .then((response) => response.json())
       .then((result) => {
         if (result === "Data Deleted")
-          window.location.href = "http://localhost:5173/show";
+          window.location.reload()
       });
   }
 
@@ -69,7 +69,7 @@ function Show() {
       .then((result) => {
         if (result === "Data Updated") {
           // setIsActive(false);  
-          window.location.href = "http://localhost:5173/show";
+          window.location.reload();
         }
       });
   }
