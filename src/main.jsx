@@ -10,9 +10,9 @@ import Show from './Show.jsx';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <Routes>
-      <Route path = "/" element ={<Home/>}></Route>
-      <Route path = "/show" element ={<Show/>}></Route>
-      <Route path = "/showBlogs" element ={<Blogs/>}></Route>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/show" element={<Show/>}></Route>
+      <Route path="/showBlogs" element={<Blogs/>}></Route>
     </Routes>
   </Router>
 )
