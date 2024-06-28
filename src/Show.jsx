@@ -10,7 +10,7 @@ function Show() {
   const [idToEdit, setIdToEdit] = useState('')
 
   useEffect(() => {
-    fetch("http://localhost:4000/show")
+    fetch("https://blog-backend-i4ss.onrender.com/show")
       .then(response => response.json())
       .then(result => {
         setData(result)
@@ -19,7 +19,7 @@ function Show() {
   }, [])
 
   function handleDelete(id) {
-    fetch("http://localhost:4000/deleteData", {
+    fetch("https://blog-backend-i4ss.onrender.com/deleteData", {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
@@ -56,7 +56,7 @@ function Show() {
 
     const obj = { name, email, message, id: idToEdit };
 
-    fetch("http://localhost:4000/editData", {
+    fetch("https://blog-backend-i4ss.onrender.com/editData", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

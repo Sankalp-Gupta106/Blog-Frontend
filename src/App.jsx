@@ -11,7 +11,7 @@ function App() {
     e.preventDefault()
     const obj = { name, email, message }
 
-    fetch("http://localhost:4000/getdata", {
+    fetch("https://blog-backend-i4ss.onrender.com/getdata", {
       method: "POST",
       headers: {
         "content-type": "application/json",

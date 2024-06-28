@@ -21,7 +21,7 @@ function Home() {
         formdata.append('file' , file)
         // console.log(obj)
 
-        fetch("http://localhost:4000/getBlog", {
+        fetch("https://blog-backend-i4ss.onrender.com/getBlog", {
             method: "POST",
             body: formdata
         }).then(response=>response.json()).then(result=>console.log(result))

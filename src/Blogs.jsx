@@ -5,7 +5,7 @@ function Blogs() {
   const [search, setSearch] = useState("")
 
   useEffect(() => {
-    fetch("http://localhost:4000/showBlogs")
+    fetch("https://blog-backend-i4ss.onrender.com/showBlogs")
       .then(response => response.json())
       .then(result => {
         setData(result)
@@ -14,7 +14,7 @@ function Blogs() {
   }, [])
 
   function handleSearch() {
-    fetch("http://localhost:4000/searchBlog?q=" + search)
+    fetch("https://blog-backend-i4ss.onrender.com/searchBlog?q=" + search)
       .then(response => response.json())
       .then(result => console.log(result))
   }
@@ -36,7 +36,7 @@ function Blogs() {
             <h1>{d.title}</h1>
             <h5>{d.author}</h5>
             {d.file && (
-              <img src={`http://localhost:4000/${d.file}`}alt={d.title} />
+              <img src={`https://blog-backend-i4ss.onrender.com/${d.file}`}alt={d.title} />
                 )}
             <p>{d.blog}</p>
           </div>
