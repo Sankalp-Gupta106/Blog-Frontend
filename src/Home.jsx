@@ -44,8 +44,9 @@ function Home() {
                         <a href="/showBlogs"><button type="button" >All Blogs</button></a>
                     </form>
                 </div>
+               <a href ="/add"> <button type='button'>Add Message</button></a>
             </div>
-            <footer></footer>
+            
         </>
     )
 }

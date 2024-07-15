@@ -32,6 +32,10 @@ function App() {
   return (
     <>
       <div className="mainContainer">
+        <div>
+          <a href="/showBlogs"><button>All Blogs</button></a>
+          <a href="/"><button>Add Blog</button></a>
+          </div>
         <h1>Welcome</h1>
         <div className="form">
           {response ? <p> Thank you for your message</p> : ""}
